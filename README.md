@@ -53,7 +53,7 @@ MyFirstApp/
 1. Clone the repository
 
 ```bash
-   git clone https://github.com/<your-username>/MyFirstApp.git
+   git clone https://github.com/hhnethsara/My-Profile-React.git
    cd MyFirstApp
 ```
 

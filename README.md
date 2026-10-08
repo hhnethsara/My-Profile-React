@@ -1,56 +1,84 @@
-# Welcome to your Expo app 👋
+# My Profile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple mobile app built with **React Native** and **Expo** that displays a user profile screen. The user's avatar, name, email, and points are shown, and tapping the floating **+** button adds one point.
 
-## Get started
+## Student Details
 
-1. Install dependencies
+| Field        | Details                          |
+| ------------ | -------------------------------- |
+| Name         | HH Nethsara Vimukthi Induwara    |
+| Student ID   | 37171                            |
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- Profile screen with avatar and verified badge
+- Name, email, and points details
+- Floating action button (**+**) that increases the points by 1 on every tap
+- Clean black-and-white layout with a custom "My Profile" header
 
-   ```bash
-   npx expo start
-   ```
+## Tech Stack
 
-In the output, you'll find options to open the app in a
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/) with [Expo Router](https://docs.expo.dev/router/introduction) (file-based routing)
+- TypeScript
+- `@expo/vector-icons` for icons
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+MyFirstApp/
+├── assets/            # Images and icons (including the avatar)
+├── src/
+│   ├── app/
+│   │   ├── _layout.tsx   # Stack navigation and header styling
+│   │   └── index.tsx     # My Profile screen
+│   ├── components/
+│   ├── constants/
+│   └── hooks/
+├── app.json
+├── package.json
+└── tsconfig.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-### Other setup steps
+### Prerequisites
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+- [Node.js](https://nodejs.org/) (LTS version)
+- [Git](https://git-scm.com/)
+- Expo Go app on your phone (optional), or an Android emulator / web browser
 
-## Learn more
+### Installation
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Clone the repository
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+   git clone https://github.com/<your-username>/MyFirstApp.git
+   cd MyFirstApp
+```
 
-## Join the community
+2. Install dependencies
 
-Join our community of developers creating universal apps.
+```bash
+   npm install
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3. Start the app
+
+```bash
+   npx expo start
+```
+
+4. Open the app using one of the options shown in the terminal:
+   - Press `w` to open in the web browser
+   - Press `a` to open in an Android emulator
+   - Scan the QR code with Expo Go on your phone
+
+## How It Works
+
+The points value is stored in React state using the `useState` hook. Each press of the **+** button calls `setPoints` and increases the value by 1, and the screen updates immediately.
+
+## Author
+
+**HH Nethsara Vimukthi Induwara**
+Student ID: 37171
